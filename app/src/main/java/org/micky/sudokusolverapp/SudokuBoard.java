@@ -97,10 +97,10 @@ public class SudokuBoard extends View {
             // invalidate(); // Refresh
 
             canvas.drawRect((c-1) * cellSize, 0, c * cellSize,
-                    cellSize * 9, cellsHighlightColorPaint);
+                    cellSize * 9, cellFillColorPaint);
 
             canvas.drawRect(0, (r-1) * cellSize, cellSize * 9,
-                    r * cellSize, cellsHighlightColorPaint);
+                    r * cellSize, cellFillColorPaint);
 
             canvas.drawRect((c-1) * cellSize, (r-1) * cellSize, c * cellSize,
                     r * cellSize, cellsHighlightColorPaint);
